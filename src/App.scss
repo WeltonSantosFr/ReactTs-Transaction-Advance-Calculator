@@ -1,0 +1,78 @@
+body {
+  background-color: #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  .mainDiv {
+    background-color: #fff;
+    display: flex;
+    padding: 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 40vw;
+    border-radius: 8px;
+    border: solid 1px rgba($color: #000000, $alpha: 0.4);
+
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 24px;
+      color: rgba($color: #000000, $alpha: 0.7);
+    }
+    label {
+      font-size: 14px;
+      color: rgba($color: #000000, $alpha: 0.5);
+      margin-bottom: 10px;
+    }
+    p {
+      margin-top: -15px;
+      font-size: 8px;
+      color: rgba($color: #000000, $alpha: 0.5);
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 18px;
+      color: #3a86ff;
+      font-weight: bolder;
+    }
+    input {
+      border-radius: 4px;
+      border: solid 1px rgba($color: #000000, $alpha: 0.1);
+      height: 30px;
+      width: 250px;
+      margin-bottom: 20px;
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      /* display: none; <- Crashes Chrome on hover */
+      -webkit-appearance: none;
+      margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+    }
+
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+    .receivers {
+      color: #3a86ff;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .receiversDiv {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 300px;
+    }
+    button {
+      display: none;
+    }
+  }
+}
